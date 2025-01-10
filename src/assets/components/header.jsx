@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 
 function Header() {
   const aot = [
-    "Mechanical",
-    "Electrical",
-    "Computer Science",
-    "IC",
-    "Electronics",
-    "Civil",
+    { name: "Mechanical", path: "/mechanical" },
+    { name: "Electrical", path: "/electrical" },
+    { name: "Computer Science", path: "/computer-science" },
+    { name: "IC", path: "/ic" },
+    { name: "Electronics", path: "/electronics" },
+    { name: "Civil", path: "/civil" },
   ];
 
   return (
@@ -37,12 +38,11 @@ function Header() {
             <p className="mb-4 text-lg">Choose your favourite topic</p>
             <div className="flex gap-6 flex-wrap w-[25rem]">
               {aot.map((item, i) => (
-                <div
-                  key={i}
-                  className="q-items hover:scale-110"
-                >
-                  {item}
-                </div>
+                <Link key={i} to={item.path}>
+                  <div key={i} className="q-items hover:scale-110">
+                    {item.name}
+                  </div>
+                </Link>
               ))}
             </div>
           </div>
