@@ -8,8 +8,10 @@ function App() {
     <>
       <section className="qz-main-section w-screen h-screen overflow-hidden bg-main-background bg-center bg-cover">
         <Header />
-        <Quizz />
-        <Footer />
+        {/* <div className="relative top-48">
+          <Quizz />
+          <Footer />
+        </div> */}
       </section>
     </>
   );

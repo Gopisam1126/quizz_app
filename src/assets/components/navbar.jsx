@@ -16,7 +16,7 @@ function Navbar() {
   return (
     <>
       <nav
-        className="flex items-center fixed top-8 left-20 right-20 px-10 py-2 bg-violet-600 shadow-lg rounded-lg opacity-0 -translate-y-96"
+        className="flex items-center px-10 py-2 bg-violet-600 shadow-lg rounded-lg opacity-0 -translate-y-96"
         id="navbar"
       >
         <div className="mr-auto">
