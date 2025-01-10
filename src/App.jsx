@@ -6,7 +6,7 @@ import "./assets/compStyles/common.css";
 function App() {
   return (
     <>
-      <section className="qz-main-section">
+      <section className="qz-main-section w-screen h-screen overflow-hidden bg-main-background bg-center bg-cover">
         <Header />
         <Quizz />
         <Footer />

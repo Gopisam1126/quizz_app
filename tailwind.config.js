@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'main-background' : "url('images/gradient_des_teal-purple.jpg')",
+        'bg-sec': "url('images/gradient_des_blue.jpg')"
+      },
+    },
   },
   plugins: [],
 }
