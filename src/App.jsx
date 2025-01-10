@@ -1,6 +1,6 @@
-import Footer from "./assets/components/footer";
+// import Footer from "./assets/components/footer";
 import Header from "./assets/components/header";
-import Quizz from "./assets/components/quiz";
+// import Quizz from "./assets/components/quiz";
 import "./assets/compStyles/common.css";
 
 function App() {

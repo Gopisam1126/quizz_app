@@ -18,7 +18,7 @@ function Header() {
         </div>
         <div className="flex gap-10 px-2 py-2 mx-20 relative top-48">
           <div className="w-[40rem] h-96 text-blue-50 px-5 py-2">
-            <h2 className="relative left-20 hero-heading special-font z-10 text-slate-600">
+            <h2 className="relative left-20 hero-heading special-font z-10 text-teal-700">
               Unle<b>a</b>sh your inner wisd<b>o</b>m
             </h2>
             <div className="relative w-full">

@@ -55,7 +55,7 @@
   }
 
   .hero-heading {
-    @apply uppercase font-zentry font-black text-8xl mt-5 pointer-events-none mix-blend-difference relative sm:right-10 sm:text-7xl md:text-8xl;
+    @apply uppercase font-zentry font-black text-8xl mt-5 pointer-events-none mix-blend-darken relative sm:right-10 sm:text-7xl md:text-8xl;
   }
 
   .q-items {
