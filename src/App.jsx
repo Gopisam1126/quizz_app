@@ -9,6 +9,7 @@ import Electronics from "./assets/components/electronics";
 import ComputerScience from "./assets/components/cs";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./assets/compStyles/common.css";
+import Footer from "./assets/components/footer";
 
 function App() {
   return (
@@ -25,10 +26,7 @@ function App() {
             <Route path="/computer-science" element={<ComputerScience/>}/>
           </Routes>
         </Router>
-        {/* <div className="relative top-48">
-          <Quizz />
-          <Footer />
-        </div> */}
+        <Footer/>
       </section>
     </>
   );
