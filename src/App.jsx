@@ -1,15 +1,15 @@
-// import Footer from "./assets/components/footer";
 import Header from "./assets/components/header";
-// import Quizz from "./assets/components/quiz";
 import Mechanical from "./assets/components/mechanical";
 import IC from "./assets/components/ic";
 import Civil from "./assets/components/civil";
 import Electrical from "./assets/components/electrical";
 import Electronics from "./assets/components/electronics";
 import ComputerScience from "./assets/components/cs";
+import Footer from "./assets/components/footer";
+import About from "./assets/pages/about";
+import Feedback from "./assets/pages/feedback";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./assets/compStyles/common.css";
-import Footer from "./assets/components/footer";
 
 function App() {
   return (
@@ -24,6 +24,8 @@ function App() {
             <Route path="/electrical" element={<Electrical/>}/>
             <Route path="/electronics" element={<Electronics/>}/>
             <Route path="/computer-science" element={<ComputerScience/>}/>
+            <Route path="/about" element={<About/>}/>
+            <Route path="/feedback" element={<Feedback/>}/>
           </Routes>
         </Router>
         <Footer/>

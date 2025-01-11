@@ -3,7 +3,12 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  const navItems = ["home", "Categories", "About", "Feedback"];
+  // const navItems = ["home", "About", "Feedback"];
+  const navItems = [
+    { item: "Home", path: "/" },
+    { item: "About", path: "/about" },
+    { item: "Feedback", path: "/feedback" },
+  ];
 
   useEffect(() => {
     gsap.to("#navbar", {
@@ -31,9 +36,9 @@ function Navbar() {
         </Link>
         <div className="flex gap-8 font-medium">
           {navItems.map((item, i) => (
-            <a className="cursor-pointer nav-hover-btn" key={i}>
-              {item}
-            </a>
+            <Link to={item.path} className="cursor-pointer nav-hover-btn" key={i}>
+              {item.item}
+            </Link>
           ))}
         </div>
       </nav>
