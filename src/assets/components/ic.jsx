@@ -1,11 +1,12 @@
-function IC() {
+import { icQ } from "../utils/icQ";
+import Quizz from "./quiz";
+
+function Mechanical() {
   return (
     <>
-      <section>
-        <h1>IC</h1>
-      </section>
+      <Quizz questionArray={icQ} />
     </>
   );
 }
 
-export default IC;
+export default Mechanical;

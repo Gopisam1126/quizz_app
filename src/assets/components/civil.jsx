@@ -1,9 +1,10 @@
+import { civilQ } from "../utils/civilQ";
+import Quizz from "./quiz";
+
 function Civil() {
   return (
     <>
-      <section>
-        <h1>Civil</h1>
-      </section>
+      <Quizz questionArray={civilQ} />
     </>
   );
 }

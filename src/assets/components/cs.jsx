@@ -1,11 +1,12 @@
-function ComputerScience() {
+import { csQ } from "../utils/csQ";
+import Quizz from "./quiz";
+
+function Mechanical() {
   return (
     <>
-      <section>
-        <h1>ComputerScience</h1>
-      </section>
+      <Quizz questionArray={csQ} />
     </>
   );
 }
 
-export default ComputerScience;
+export default Mechanical;

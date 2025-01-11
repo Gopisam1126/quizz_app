@@ -1,11 +1,12 @@
-function Electronics() {
+import { electronicsQ } from "../utils/electronicsQ";
+import Quizz from "./quiz";
+
+function Mechanical() {
   return (
     <>
-      <section>
-        <h1>Electronics</h1>
-      </section>
+      <Quizz questionArray={electronicsQ} />
     </>
   );
 }
 
-export default Electronics;
+export default Mechanical;
